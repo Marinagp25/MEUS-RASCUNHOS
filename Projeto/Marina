@@ -23,20 +23,25 @@ class cadastroHospede():
             print(quartos)
             print(quartosOcup)
             
-    def servico():
-         print("Opções 1 - Café da Manhã, 2- Almoço, 3 - Lanche ou 4 - Jantar ou 0 -  Desistir")
-         qt = int(input("Qual quarto deseja solicitar: "))
-         opcao = int(input("Digite o que deseja: "))
-         if opcao == 1:
-          print("Café da Manhã R$ 30,00")
-         if opcao == 2:
-            print("Almoço R$ 50,00")
-         if opcao == 3:
-            print("Lanche R$ 30,00")
-         if opcao == 4:
-            print("Jantar R$ 60,00")
-         if opcao == 0:
-            print("Desistir")
- 
+    def servico(self, Cafe_manha, Almoco, Lanche, Jantar):
+        print("Opções 1 - Café da Manhã, 2- Almoço, 3 - Lanche ou 4 - Jantar ou 0 -  Desistir")
+        Cafe_manha =  30
+        Almoco =  50
+        Lanche = 30
+        Jantar = 60
+       qt = int(input("Qual quarto deseja solicitar: "))
+         
+       opcao = int(input("Digite o que deseja: "))
+       if opcao == 1:
+          print("Café da Manhã R$", Cafe_manha)
+       elif opcao == 2:
+          print("Almoço R$", Almoco)
+       elif opcao == 3:
+          print("Lanche R$", Lanche)
+       elif opcao == 4:
+          print("Jantar R$", Jantar)
+       elif opcao == 0:
+          print("Desistir")
+      else:
+          print("")
 
-        
